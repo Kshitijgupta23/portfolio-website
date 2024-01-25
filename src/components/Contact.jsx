@@ -5,6 +5,7 @@ import { styles } from '../style';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import { l } from 'maath/dist/misc-19a3ec46.esm';
 
 const Contact = () => {
 
@@ -16,8 +17,45 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {}
-  const handleSubmit = (e) => {}
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setForm({ ...form, [name]: value})
+
+  }
+// template_5tjr6am
+// service_p5nytve
+// XHoxkh_kZHNR5Oueq
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+        import.meta.env.VITE_EMAIL_SERVICE,
+        import.meta.env.VITE_EMAIL_TEMPLATE,
+        {
+          from_name: form.name,
+          to_name: 'Kshitij',
+          from_email: form.email,
+          to_email: 'kshitij.gupta2301@gmail.com',
+          message: form.message
+        },
+        import.meta.env.VITE_EMAIL_API
+      )
+      .then(() => {
+        setLoading(false);
+        alert('Thank You. I will get back to you as soon as possible.');
+
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        })
+      },(error) => {
+        setLoading(false);
+        console.log(error);
+        alert('Something went wrong');
+      })
+  }
 
   return (
     <div 
@@ -76,7 +114,7 @@ const Contact = () => {
             className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md
              shadow-primary rounded-md'
           >
-            {loading ? 'Secind...' : 'Send'}
+            {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
       </motion.div>
