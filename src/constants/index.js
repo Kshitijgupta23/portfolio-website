@@ -28,6 +28,10 @@ import {
       title: "About",
     },
     {
+      id: "projects",
+      title: "Projects",
+    },
+    {
       id: "work",
       title: "Work",
     },
@@ -178,6 +182,7 @@ import {
       ],
       image: carrent,
       source_code_link: "https://github.com/",
+      url: "https://github.com/",
     },
     {
       name: "Job IT",
@@ -199,6 +204,7 @@ import {
       ],
       image: jobit,
       source_code_link: "https://github.com/",
+      url: "https://github.com/",
     },
     {
       name: "Trip Guide",
@@ -220,6 +226,7 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
+      url: "https://github.com/",
     },
   ];
   
