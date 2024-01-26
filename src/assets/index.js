@@ -25,11 +25,13 @@ import threejs from "./tech/threejs.svg";
 
 import sparks from "./company/sparks.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import dream from './dream.png';
+import zerohunger from './zerohunger.png';
+import yt from './yt.png';
+import agri from './agri.png';
 
 export {
+  dream,
   link,
   logo,
   logo1,
@@ -54,7 +56,7 @@ export {
   typescript,
   threejs,
   sparks,
-  carrent,
-  jobit,
-  tripguide,
+  zerohunger,
+  yt,
+  agri,
 };

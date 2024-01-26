@@ -16,9 +16,10 @@ import {
     figma,
     docker,
     sparks,
-    carrent,
-    jobit,
-    tripguide,
+    dream,
+    zerohunger,
+    yt,
+    agri,
     threejs,
   } from "../assets";
   
@@ -163,70 +164,95 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "DreamEstate",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A real-estate marketplace that allows users to search and view property listings from various providers. Users can also create and upload their own listings.",
       tags: [
         {
-          name: "react",
+          name: "mern",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "redux",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "nodejs",
           color: "pink-text-gradient",
         },
+        {
+          name: "firebase",
+          color: "blue-text-gradient",
+        }
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-      url: "https://github.com/",
+      image: dream,
+      source_code_link: "https://github.com/Kshitijgupta23/mern_estate",
+      url: "https://dreamestate-od8m.onrender.com/",
     },
     {
-      name: "Job IT",
+      name: "ZeroHunger",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A fundraising/donation platform to rase funds for ZeroHunger. Users can donate through RazorPay payment portal.",
       tags: [
         {
-          name: "react",
+          name: "html",
           color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-      url: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
         },
         {
           name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "nodejs",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-      url: "https://github.com/",
+      image: zerohunger,
+      source_code_link: "https://github.com/Kshitijgupta23/ZeroHunger_Sparks",
+      url: "https://kshitijgupta23.github.io/ZeroHunger_Sparks/",
+    },
+    {
+      name: "YouThoob",
+      description:
+        "Replicated the core features of YouTube with video sections, personalised categories, and dedicated channel pages. ",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "materialui",
+          color: "green-text-gradient",
+        },
+        {
+          name: "rapidapi",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: yt,
+      source_code_link: "https://github.com/Kshitijgupta23/YouTube_Clone",
+      url: "https://youtube-clone-delta-virid.vercel.app/",
+    },
+    {
+      name: "AgriVision",
+      description:
+        "A website aimed at revolutionising agriculture through integrating machine learning tools. Implemented machine learning algorithms capable of identifying over 20 distinct crop types.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "jwt",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: agri,
+      source_code_link: "https://github.com/Kshitijgupta23/Agrivision",
     },
   ];
   
