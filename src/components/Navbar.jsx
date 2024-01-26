@@ -69,7 +69,13 @@ const Navbar = () => {
                     setToggle(!toggle);
                     setActive(link.title);
                     }}>
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a 
+                  href={link.title === "Resume" ? "https://drive.google.com/file/d/1N8gULczZN6EHKWEF4pUzKFmiveMEhxXC/view?usp=sharing" 
+                  : `#${link.id}`} 
+                  {...(link.title === "Resume" ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                >
+                  {link.title}
+                </a>
                 </li>
               ))}
               </ul>
