@@ -36,7 +36,13 @@ const Navbar = () => {
                     : "text-secondary"
                 } hover:text-white text-[18px] cursor-pointer font-medium`}
                 onClick={() => setActive(link.title)}>
-                <a href={`#${link.id}`}>{link.title}</a>
+                <a 
+                  href={link.title === "Resume" ? "https://drive.google.com/file/d/1N8gULczZN6EHKWEF4pUzKFmiveMEhxXC/view?usp=sharing" 
+                  : `#${link.id}`} 
+                  {...(link.title === "Resume" ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                >
+                  {link.title}
+                </a>
               </li>
             ))}
         </ul>
