@@ -1,8 +1,17 @@
 import {motion} from 'framer-motion';
 import {styles} from '../style';
 import {ComputersCanvas} from './canvas';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero = () => {
+
+  const [text] = useTypewriter({
+    words: ['ReactJS', 'MongoDB', 'NodeJS', 'Redux'],
+    loop: {},
+    typeSpeed: 120,
+    deleteSpeed: 80,
+  });
+
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xo
@@ -16,7 +25,10 @@ const Hero = () => {
               Kshitij</span></h1>
               <p className={`${styles.heroSubText} mt-2 text-white-100`}>
                 A fullstack developer well versed in<br className='sm:block hidden'/>
-                passion for backend programming & DevOps
+                <span className='mt-2 text-[#915eff]'>{text}</span>
+                <span style={{color: 'white'}}>
+                  <Cursor />
+                </span>
               </p>
           </div>
       </div>
