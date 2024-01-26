@@ -208,8 +208,8 @@ import {
         },
       ],
       image: zerohunger,
-      source_code_link: "https://zero-hunger-sparks.vercel.app/",
-      url: "https://kshitijgupta23.github.io/ZeroHunger_Sparks/",
+      source_code_link: "https://github.com/Kshitijgupta23/ZeroHunger_Sparks",
+      url: "https://zero-hunger-sparks.vercel.app/",
     },
     {
       name: "YouThoob",
